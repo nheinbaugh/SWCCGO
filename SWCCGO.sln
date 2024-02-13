@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWCCGO.Models", "SWCCGO.Models\SWCCGO.Models.csproj", "{34205069-B1FF-4DDB-8A32-C7CEB9EB7BCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWCCGO.Models", "SWCCGO.Models\SWCCGO.Models.csproj", "{34205069-B1FF-4DDB-8A32-C7CEB9EB7BCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWCCGO.Api", "SWCCGO.Api\SWCCGO.Api.csproj", "{1F876049-2489-4E3B-8285-4AB34E126127}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWCCGO.Api", "SWCCGO.Api\SWCCGO.Api.csproj", "{1F876049-2489-4E3B-8285-4AB34E126127}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWCCGO.DataLoader", "SWCCGO.DataLoader\SWCCGO.DataLoader.csproj", "{8EE10321-BC5A-427B-8B34-14F9F45304A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1F876049-2489-4E3B-8285-4AB34E126127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F876049-2489-4E3B-8285-4AB34E126127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F876049-2489-4E3B-8285-4AB34E126127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE10321-BC5A-427B-8B34-14F9F45304A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE10321-BC5A-427B-8B34-14F9F45304A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE10321-BC5A-427B-8B34-14F9F45304A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE10321-BC5A-427B-8B34-14F9F45304A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

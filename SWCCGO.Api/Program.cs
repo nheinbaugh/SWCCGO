@@ -15,7 +15,7 @@ public class Program
 
 
         builder.Services.AddSignalR();
-
+        builder.Services.AddCors();
         var app = builder.Build();
 
         
@@ -27,13 +27,14 @@ public class Program
         }
 
         app.UseHttpsRedirection();
-
+        app.UseCors(x => x
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials()
+            .WithOrigins("http://localhost:5173")); // Allow only this origin can also have multiple origins seperated with comma
+            // .SetIsOriginAllowed(origin => true));// Allow any origin  
         app.UseAuthorization();
-        
-                app.UseEndpoints(endpoints =>
-                {
-                    endpoints.MapHub<GameHub>("/game");
-                });
+        app.MapHub<GameHub>("/game");
 
         var summaries = new[]
         {

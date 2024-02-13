@@ -6,6 +6,6 @@ public class GameHub: Hub
 {
     public async Task Send(string name, string message)
     {
-        await Clients.All.SendAsync("broadcastMessage", name, message);
+        await Clients.All.SendAsync("broadcastMessage", name, $"{message} from {Context.ConnectionId}");
     }
 }
